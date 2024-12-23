@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'edu.sc.seis.launch4j' version '2.5.4'
+}
+
+group = 'com.simplehttp'
+version = '1.0.0'
+sourceCompatibility = '17'
+
+application {
+    mainClass = 'com.simplehttp.SimpleHttpServer'  // Changé ici
+}
+
+repositories {
+    mavenCentral()
+}
+
+launch4j {
+    mainClassName = 'com.simplehttp.SimpleHttpServer'  // Changé ici aussi
+    headerType = "gui"
+    jar = "${project.buildDir}/libs/${project.name}-${project.version}.jar"
+    outfile = 'SimpleHttpServer.exe'
+    errTitle = 'Simple HTTP Server'
+    
+    //jreMinVersion = '11'
+    windowTitle = 'Simple HTTP Server'
+    textVersion = '1.0.0'
+    copyright = 'Your Copyright'
+}
+
+jar {
+    from('src/main/resources') {
+        include '**/*'
+    }
+    
+    manifest {
+        attributes(
+            'Main-Class': 'com.simplehttp.SimpleHttpServer',
+            'Implementation-Title': 'Simple HTTP Server',
+            'Implementation-Version': version
+        )
+    }
+    // Ajoute cette ligne pour gérer les doublons
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

@@ -1,0 +1,68 @@
+Si c'est fini marquer:ok, pas fini marquer
+1)page index
+affichage:
+    -lien:ok
+    -menu:ok
+    -produit:ok
+    -css
+fonction:
+pas de fonction utilise:ok;
+data:
+    -nom du produit:ok
+    -prix:ok
+    -categorie:ok
+    -image:ok
+integration:
+    ok
+2)page traitement
+affichage:
+    -lien:ok
+    -css
+fonction:
+qui montre l'image lorsqu'on selectionne :ok
+data:
+    -nom du produit:ok
+    -prix:ok
+    -categorie:ok
+    -image:ok
+integration:
+     afaka miaraka :ok
+3)page sary
+affichage:
+    -lien:ok
+    -css
+fonction:
+qui montre l'image lorsqu'on selectionne :ok
+data:
+    -nom du produit
+    -prix
+    -categorie
+    -image
+integration:
+     afaka miaraka :ok
+4)page trait
+affichage:
+    -lien:ok
+    -css
+fonction:
+pas de fonction mais utilisation de $_GET et $_SESSION:ok
+data:
+    -nom du produit:ok
+    -prix:ok
+    -categorie:ok
+    -image:ok
+integration:
+     pas fonction utilise dans se page :ok
+5)page mon_panier
+affichage:
+    -lien:ok
+    -css
+fonction:
+pas de fonction mais utilisation de $_SESSION qui permet de stocker les produit qu'on achete :ok
+data:
+    -nom du produit:ok
+    -prix:ok
+    -categorie:ok
+    -image:ok
+integration:
+     pas fonction utilise dans se page :ok

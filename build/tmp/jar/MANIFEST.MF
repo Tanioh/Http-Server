@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: com.simplehttp.SimpleHttpServer
+Implementation-Title: Simple HTTP Server
+Implementation-Version: 1.0.0
+
